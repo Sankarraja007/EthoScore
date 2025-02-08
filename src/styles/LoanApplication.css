@@ -1,0 +1,364 @@
+/* Modern Banking Application Styles */
+:root {
+    --primary-color: #1a365d;
+    --primary-light: #2c5282;
+    --accent-color: #4299e1;
+    --success-color: #48bb78;
+    --error-color: #f56565;
+    --background-light: #f7fafc;
+    --text-primary: #2d3748;
+    --text-secondary: #4a5568;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+  }
+  
+  /* Page Container */
+  .loan-application-page {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: var(--shadow-lg);
+    font-family: 'Inter', system-ui, sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .loan-application-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+  }
+  
+  /* Header Styling */
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: -0.5px;
+  }
+  
+  /* Bias Toggle Button */
+  .bias-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+  }
+  
+  .toggle-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    background: var(--background-light);
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .toggle-button:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+  }
+  
+  .toggle-button.active {
+    background: var(--success-color);
+    color: white;
+  }
+  
+  /* Form Container */
+  .loan-type-selector {
+    margin-bottom: 30px;
+    background: var(--background-light);
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  /* Form Elements */
+  .loan-form label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .loan-form input,
+  .loan-form select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 16px;
+    color: var(--text-primary);
+    transition: all 0.2s ease;
+  }
+  
+  .loan-form input:hover,
+  .loan-form select:hover {
+    border-color: var(--accent-color);
+  }
+  
+  .loan-form input:focus,
+  .loan-form select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15);
+  }
+  
+  /* Submit Button */
+  .apply-button {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .apply-button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  /* Results Styling */
+  .prediction-result {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 600;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  .approved {
+    background-color: var(--success-color);
+    color: white;
+    box-shadow: 0 4px 6px rgba(72, 187, 120, 0.2);
+  }
+  
+  .rejected {
+    background-color: var(--error-color);
+    color: white;
+    box-shadow: 0 4px 6px rgba(245, 101, 101, 0.2);
+  }
+  
+  /* Explanation Section */
+  .explanation {
+    margin-top: 20px;
+    padding: 20px;
+    background: var(--background-light);
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+  }
+  
+  /* Bias Mode Styles */
+  .loan-application-page.bias-mode {
+    background: #1a202c;
+    color: #e2e8f0;
+  }
+  
+  .loan-application-page.bias-mode h1 {
+    color: #e2e8f0;
+  }
+  
+  .loan-application-page.bias-mode .loan-form label {
+    color: #a0aec0;
+  }
+  
+  .loan-application-page.bias-mode .loan-form input,
+  .loan-application-page.bias-mode .loan-form select {
+    background: #2d3748;
+    border-color: #4a5568;
+    color: #e2e8f0;
+  }
+  
+  .loan-application-page.bias-mode .loan-type-selector {
+    background: #2d3748;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .loan-application-page {
+      margin: 20px;
+      padding: 30px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    .apply-button {
+      padding: 14px;
+      font-size: 16px;
+    }
+    
+    .bias-toggle {
+      position: relative;
+      top: 0;
+      right: 0;
+      margin-bottom: 20px;
+      text-align: right;
+    }
+  }
+  /* Previous styles remain the same until loan-type-selector */
+
+/* Enhanced Loan Type Selector */
+.loan-type-selector {
+    margin: 0 -40px 40px -40px;
+    padding: 30px 40px;
+    background: linear-gradient(to right, #f8fafc, #edf2f7);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    position: relative;
+  }
+  
+  .loan-type-selector::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      transparent,
+      rgba(66, 153, 225, 0.3),
+      transparent
+    );
+  }
+  
+  .loan-type-selector label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .loan-type-selector select {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+    padding: 16px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-primary);
+    background-color: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%232d3748' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  .loan-type-selector select:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(66, 153, 225, 0.1);
+  }
+  
+  .loan-type-selector select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15);
+    transform: translateY(-1px);
+  }
+  
+  /* Loan Type Options Styling */
+  .loan-type-selector select option {
+    font-size: 16px;
+    padding: 12px;
+    background-color: white;
+    color: var(--text-primary);
+  }
+  
+  /* Bias Mode Adjustments */
+  .loan-application-page.bias-mode .loan-type-selector {
+    background: linear-gradient(to right, #1a202c, #2d3748);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  
+  .loan-application-page.bias-mode .loan-type-selector label {
+    color: #e2e8f0;
+  }
+  
+  .loan-application-page.bias-mode .loan-type-selector select {
+    background-color: #2d3748;
+    border-color: #4a5568;
+    color: #e2e8f0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23e2e8f0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  }
+  /* Back Button */
+.back-button-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.back-button {
+  text-decoration: none;
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.back-button:hover {
+  background: #0056b3;
+}
+
+  .loan-application-page.bias-mode .loan-type-selector select:hover {
+    border-color: var(--accent-color);
+    box-shadow: 0 4px 12px rgba(66, 153, 225, 0.05);
+  }
+  
+  /* Rest of the previous styles remain the same */
