@@ -1,0 +1,556 @@
+/* Transactions.css */
+
+.transactions-page {
+    background: #f1f1f1;
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  .transactions-page {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .transactions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .sort-dropdown {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .transactions-table th, .transactions-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .transactions-table th {
+    background-color: #333;
+    color: white;
+  }
+  
+  .transactions-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .status.completed {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .status.pending {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  /* Back Button Styling */
+  .back-button-container {
+    margin-top: 20px;
+  }
+  
+  .back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  .transactions-page {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .transactions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .sort-dropdown {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .transactions-table th, .transactions-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .transactions-table th {
+    background-color: #333;
+    color: white;
+  }
+  
+  .transactions-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .status.completed {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .status.pending {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  /* Back Button Styling */
+  .back-button-container {
+    margin-top: 20px;
+  }
+  
+  .back-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .back-button:hover {
+    background: linear-gradient(135deg, #0056b3, #004494);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .transactions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .transactions-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .filter-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sort-label {
+    font-size: 1rem;
+    color: #555;
+    margin-right: 10px;
+  }
+  
+  .sort-dropdown {
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .sort-dropdown:hover {
+    border-color: #007bff;
+  }
+  
+  .transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .transactions-table th,
+  .transactions-table td {
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  .transactions-table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .transactions-table td {
+    background-color: #f9f9f9;
+  }
+  
+  .transactions-table tr:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .status {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  .transactions-page {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .transactions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .sort-dropdown {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .transactions-table th, .transactions-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .transactions-table th {
+    background-color: #333;
+    color: white;
+  }
+  
+  .transactions-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .status.completed {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .status.pending {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  /* Fraud Detection */
+  .fraud {
+    background-color: rgba(255, 0, 0, 0.2);
+    font-weight: bold;
+  }
+  
+  .fraud-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+  }
+  
+  .toggle-label {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Toggle Switch */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 24px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #007bff;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  /* Charts */
+  .charts-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .chart-container {
+    width: 45%;
+  }
+  
+  /* Back Button */
+  .back-button-container {
+    margin-top: 20px;
+  }
+  
+  .back-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .back-button:hover {
+    transform: scale(1.05);
+  }
+  /* Overall Page Styling */
+.transactions-page {
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  background-color: #f8f9fa;
+  transition: background 0.3s ease-in-out;
+}
+
+.transactions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Sort Dropdown */
+.sort-dropdown {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* Fraud Mode - Background Change */
+.transactions-page.fraud-mode {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+/* Fraud Detection Toggle */
+.fraud-toggle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.toggle-label {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #ff3333;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+/* Table Styling */
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.transactions-table th,
+.transactions-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.transactions-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.transactions-table .fraud {
+  background-color: #ffcccc !important;
+  color: #ff3333;
+}
+
+/* Fraud Mode Table */
+.transactions-page.fraud-mode .transactions-table {
+  background: #333;
+}
+
+.transactions-page.fraud-mode .transactions-table th {
+  background: #ff3333;
+}
+
+.transactions-page.fraud-mode .transactions-table .fraud {
+  background-color: #660000 !important;
+}
+
+/* Status Styling */
+.status.completed {
+  color: green;
+  font-weight: bold;
+}
+
+.status.pending {
+  color: orange;
+  font-weight: bold;
+}
+
+/* Back Button */
+.back-button-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.back-button {
+  text-decoration: none;
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.back-button:hover {
+  background: #0056b3;
+}
+
+  .status.completed {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .status.pending {
+    background-color: #ffc107;
+    color: white;
+  }
+  
