@@ -280,7 +280,7 @@ def train_and_explain(X, y, sample_data, protected_features):
     
 
 def load_and_preprocess_home_loan():
-    train = pd.read_csv(r'D:\Temenos\backend\features\loan_approval\loan_sanction_train.csv')
+    train = pd.read_csv(r'D:\Sankar\Temethon\EthoScore\backend\features\loan_approval\loan_sanction_train.csv')
 
     train['Gender'].fillna(train['Gender'].mode()[0], inplace=True)
     train['Married'].fillna(train['Married'].mode()[0], inplace=True)
@@ -300,7 +300,7 @@ def load_and_preprocess_home_loan():
 
 
 def load_and_preprocess_personal_loan():
-    df = pd.read_csv(r'D:\Temenos\backend\features\loan_approval\loan_approval_dataset.csv')
+    df = pd.read_csv(r'D:\Sankar\Temethon\EthoScore\backend\features\loan_approval\loan_approval_dataset.csv')
     df.columns = df.columns.str.strip()
 
     le = LabelEncoder()
@@ -312,8 +312,8 @@ def load_and_preprocess_personal_loan():
 
 
 def load_and_preprocess_credit_card():
-    record = pd.read_csv(r'D:\Temenos\backend\features\loan_approval\application_record.csv')
-    credit = pd.read_csv(r'D:\Temenos\backend\features\loan_approval\credit_record.csv')
+    record = pd.read_csv(r'D:\Sankar\Temethon\EthoScore\backend\features\loan_approval\application_record.csv')
+    credit = pd.read_csv(r'D:\Sankar\Temethon\EthoScore\backend\features\loan_approval\credit_record.csv')
 
     status_map = {'X': 0, 'C': 0, '0': 1, '1': 1, '2': 1, '3': 1, '4': 1, '5': 1}
     credit['STATUS'] = credit['STATUS'].map(status_map)
