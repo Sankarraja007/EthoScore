@@ -27,8 +27,7 @@ const SettingsPage = () => {
   const [selectedAvatar, setSelectedAvatar] = useState(null);
 
   // Google Custom Search API configuration
-  const GOOGLE_API_KEY = "AIzaSyCSH46ZBrO5sEBAEVwf7rRm1FE1k66ZhIY";
-  const SEARCH_ENGINE_ID = "92bd6086d0b9c42d5";
+ 
 
   // Fetch user details from Firebase
   useEffect(() => {
